@@ -10,17 +10,17 @@ const url = 'http://www.boun.edu.tr/Assets/Documents/Content/Public/kampus_hayat
 
 function pdfFileName() {
     const d = new Date();
-    return `${__dirname}/boun_menu_${d.getMonth()}_${d.getFullYear()}.pdf`
+    return `${__dirname}/menu_${d.getMonth()}_${d.getFullYear()}.pdf`
 }
 
 function preJsonFileName() {
     const d = new Date();
-    return `${__dirname}/boun_menu_${d.getMonth()}_${d.getFullYear()}_pre.json`
+    return `${__dirname}/menu_${d.getMonth()}_${d.getFullYear()}_pre.json`
 }
 
 function jsonFileName() {
     const d = new Date();
-    return `${__dirname}/boun_menu_${d.getMonth()}_${d.getFullYear()}.json`
+    return `${__dirname}/menu_${d.getMonth()}_${d.getFullYear()}.json`
 }
 
 function fetchPDF(remoteUrl) {
@@ -124,7 +124,7 @@ function generateJsonFile(preJsonUrl) {
                         'calories': json['calories'][row]
                     }
 
-                    const time = foodCount <= 5 ? 'lunch' : 'dinner';
+                    const time = foodCount % 2 == 0 ? 'dinner' : 'lunch';
                     if (!days[currentDate][time]) {
                         days[currentDate][time] = [food];
                     } else {
