@@ -1,0 +1,25 @@
+{
+  "name": "boun-menu-api",
+  "version": "0.1.0",
+  "description": "API for the BOUN Menu app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Teknasyon-Teknoloji/boun-menu-api.git"
+  },
+  "author": "Omar Albeik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Teknasyon-Teknoloji/boun-menu-api/issues"
+  },
+  "homepage": "https://github.com/Teknasyon-Teknoloji/boun-menu-api#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pdf-parse": "^1.1.1",
+    "pdf-table-extractor": "^1.0.3"
+  }
+}
