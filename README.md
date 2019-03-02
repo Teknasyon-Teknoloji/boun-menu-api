@@ -35,4 +35,4 @@ JSON meals list can be access via [localhost:4000/](http://localhost:4000/).
 
 ## License
 
-This repo is released under the [MIT License](https://github.com/Teknasyon-Teknoloji/boun-menu-api/blob/master/README.md).
+This repo is released under the [MIT License](https://github.com/Teknasyon-Teknoloji/boun-menu-api/blob/master/LICENSE).
